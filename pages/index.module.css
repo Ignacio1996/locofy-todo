@@ -1,0 +1,113 @@
+.toDo,
+.userFeedbackTomorrow {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.toDo {
+  top: 0;
+  font-weight: 800;
+}
+.userFeedbackTomorrow {
+  top: 81.55%;
+  font-size: 16px;
+  color: #9494b8;
+}
+.titleNotes {
+  position: relative;
+  width: 305px;
+  height: 103px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.div {
+  position: relative;
+  font-weight: 800;
+}
+.emoji,
+.header {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+.emoji {
+  border-radius: 6px;
+  background-color: #24242d;
+  border: 1px solid #29292f;
+  flex-direction: column;
+  padding: 16px;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+}
+.header {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 56px;
+  color: #fff;
+}
+.divider,
+.image1Icon {
+  position: relative;
+  flex-shrink: 0;
+}
+.divider {
+  align-self: stretch;
+  background-color: #434343;
+  height: 1px;
+}
+.image1Icon {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.finishDesigns {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+.todocomplete,
+.todoincomplete {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.todoincomplete {
+  color: #dadada;
+}
+.addToDo {
+  align-self: stretch;
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+.toDoListDesign,
+.todolistcontainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.todolistcontainer {
+  flex: 1;
+  background-color: #1e1f25;
+  flex-direction: column;
+  padding: 64px 57px;
+  gap: 26px;
+}
+.toDoListDesign {
+  position: relative;
+  width: 100%;
+  flex-direction: row;
+  text-align: left;
+  font-size: 18px;
+  color: #7d7d94;
+  font-family: Inter;
+}
