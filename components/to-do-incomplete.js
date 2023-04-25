@@ -9,7 +9,12 @@ const ToDoIncomplete = ({ taskValue, index, toggle, deleteTodo }) => {
         onClick={() => toggle(index)}
       />
       <div className={styles.makeResponsiveOn}>{taskValue}</div>
-      <img className={styles.vectorIcon} alt="" src="/vector.svg" />
+      <img
+        className={styles.vectorIcon}
+        alt=""
+        src="/vector.svg"
+        onClick={() => deleteTodo(index)}
+      />
     </div>
   );
 };

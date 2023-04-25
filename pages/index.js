@@ -5,6 +5,7 @@ import ToDoIncomplete from "../components/to-do-incomplete";
 import styles from "./index.module.css";
 const ToDoListDesign = () => {
   const [todos, setTodos] = useState([]);
+  const [input, setInput] = useState("");
 
   // add
   const add = (event) => {
@@ -12,6 +13,7 @@ const ToDoListDesign = () => {
       let copyTodos = [...todos];
       copyTodos.push({ value: event.target.value, done: false });
       setTodos(copyTodos);
+      setInput("");
     }
   };
 
@@ -60,6 +62,8 @@ const ToDoListDesign = () => {
         <input
           className={styles.addToDo}
           type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
           placeholder="Add to do..."
           onKeyDown={add}
         />
