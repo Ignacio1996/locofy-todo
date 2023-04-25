@@ -9,6 +9,7 @@ const ToDoComplete = ({ taskValue, index, toggle, deleteTodo }) => {
         onClick={() => toggle(index)}
       />
       <div className={styles.finishDesigns}>{taskValue}</div>
+      <img className={styles.vectorIcon} alt="" src="/vector.svg" />
     </div>
   );
 };
