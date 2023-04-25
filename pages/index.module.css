@@ -1,26 +1,22 @@
 .toDo,
 .userFeedbackTomorrow {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  display: flex;
-  align-items: flex-end;
-}
-.toDo {
-  top: 0;
+  align-self: stretch;
+  position: relative;
   font-weight: 800;
 }
 .userFeedbackTomorrow {
-  top: 81.55%;
   font-size: 16px;
+  font-weight: 700;
   color: #9494b8;
 }
 .titleNotes {
-  position: relative;
-  width: 305px;
-  height: 103px;
-  flex-shrink: 0;
+  flex: 1;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
 }
 .div {
   position: relative;
@@ -31,6 +27,7 @@
   overflow: hidden;
   display: flex;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 .emoji {
   border-radius: 6px;
@@ -38,7 +35,6 @@
   border: 1px solid #29292f;
   flex-direction: column;
   padding: 16px;
-  justify-content: flex-start;
   text-align: center;
   font-size: 24px;
   color: #000;
@@ -46,9 +42,8 @@
 .header {
   align-self: stretch;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 16px;
   font-size: 56px;
-  color: #fff;
 }
 .divider,
 .image1Icon {
@@ -79,15 +74,22 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 10px;
+  color: #7d7d94;
 }
 .todoincomplete {
   color: #dadada;
 }
 .addToDo {
+  border: 0;
+  font-weight: 500;
+  font-family: Inter;
+  font-size: 18px;
+  background-color: transparent;
   align-self: stretch;
   position: relative;
   line-height: 24px;
-  font-weight: 500;
+  color: #7d7d94;
+  text-align: left;
 }
 .toDoListDesign,
 .todolistcontainer {
@@ -108,6 +110,28 @@
   flex-direction: row;
   text-align: left;
   font-size: 18px;
-  color: #7d7d94;
+  color: #fff;
   font-family: Inter;
+}
+@media screen and (max-width: 960px) {
+  .toDo,
+  .userFeedbackTomorrow {
+    text-align: center;
+  }
+  .titleNotes {
+    flex: unset;
+    align-self: stretch;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 420px) {
+  .todolistcontainer {
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
 }
