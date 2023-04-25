@@ -1,83 +1,12 @@
-.toDo,
-.userFeedbackTomorrow {
-  align-self: stretch;
-  position: relative;
-  font-weight: 800;
-}
-.userFeedbackTomorrow {
-  font-size: 16px;
-  font-weight: 700;
-  color: #9494b8;
-}
-.titleNotes {
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 16px;
-}
-.div {
-  position: relative;
-  font-weight: 800;
-}
-.emoji,
-.header {
-  overflow: hidden;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.emoji {
-  border-radius: 6px;
-  background-color: #24242d;
-  border: 1px solid #29292f;
-  flex-direction: column;
-  padding: 16px;
-  text-align: center;
-  font-size: 24px;
-  color: #000;
-}
-.header {
-  align-self: stretch;
-  flex-direction: row;
-  gap: 16px;
-  font-size: 56px;
-}
-.divider,
-.image1Icon {
-  position: relative;
-  flex-shrink: 0;
-}
+.addToDo,
 .divider {
   align-self: stretch;
+  position: relative;
+}
+.divider {
   background-color: #434343;
   height: 1px;
-}
-.image1Icon {
-  width: 24px;
-  height: 24px;
-  object-fit: cover;
-}
-.finishDesigns {
-  flex: 1;
-  position: relative;
-  line-height: 24px;
-  font-weight: 500;
-}
-.todocomplete,
-.todoincomplete {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 10px;
-  color: #7d7d94;
-}
-.todoincomplete {
-  color: #dadada;
+  flex-shrink: 0;
 }
 .addToDo {
   border: 0;
@@ -85,8 +14,6 @@
   font-family: Inter;
   font-size: 18px;
   background-color: transparent;
-  align-self: stretch;
-  position: relative;
   line-height: 24px;
   color: #7d7d94;
   text-align: left;
@@ -108,25 +35,6 @@
   position: relative;
   width: 100%;
   flex-direction: row;
-  text-align: left;
-  font-size: 18px;
-  color: #fff;
-  font-family: Inter;
-}
-@media screen and (max-width: 960px) {
-  .toDo,
-  .userFeedbackTomorrow {
-    text-align: center;
-  }
-  .titleNotes {
-    flex: unset;
-    align-self: stretch;
-  }
-  .header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
 }
 @media screen and (max-width: 420px) {
   .todolistcontainer {

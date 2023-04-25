@@ -1,0 +1,65 @@
+.toDo,
+.userFeedbackTomorrow {
+  align-self: stretch;
+  position: relative;
+  font-weight: 800;
+}
+.userFeedbackTomorrow {
+  font-size: 16px;
+  font-weight: 700;
+  color: #9494b8;
+}
+.titleNotes {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.div {
+  position: relative;
+  font-weight: 800;
+}
+.emoji,
+.header {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.emoji {
+  border-radius: 6px;
+  background-color: #24242d;
+  border: 1px solid #29292f;
+  flex-direction: column;
+  padding: 16px;
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+}
+.header {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 16px;
+  text-align: left;
+  font-size: 56px;
+  color: #fff;
+  font-family: Inter;
+}
+@media screen and (max-width: 960px) {
+  .toDo,
+  .userFeedbackTomorrow {
+    text-align: center;
+  }
+  .titleNotes {
+    flex: unset;
+    align-self: stretch;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

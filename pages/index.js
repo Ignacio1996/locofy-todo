@@ -1,28 +1,15 @@
+import Header from "../components/header";
+import ToDoComplete from "../components/to-do-complete";
+import ToDoIncomplete from "../components/to-do-incomplete";
 import styles from "./index.module.css";
 const ToDoListDesign = () => {
   return (
     <div className={styles.toDoListDesign}>
       <div className={styles.todolistcontainer}>
-        <div className={styles.header}>
-          <div className={styles.titleNotes}>
-            <div className={styles.toDo}>To Do</div>
-            <div className={styles.userFeedbackTomorrow}>
-              User feedback tomorrow!
-            </div>
-          </div>
-          <div className={styles.emoji}>
-            <div className={styles.div}>🌤️</div>
-          </div>
-        </div>
+        <Header />
         <div className={styles.divider} />
-        <div className={styles.todocomplete}>
-          <img className={styles.image1Icon} alt="" src="/image-1@2x.png" />
-          <div className={styles.finishDesigns}>Finish designs</div>
-        </div>
-        <div className={styles.todoincomplete}>
-          <img className={styles.image1Icon} alt="" src="/image-2@2x.png" />
-          <div className={styles.finishDesigns}>Make responsive on Figma</div>
-        </div>
+        <ToDoComplete taskValue="Finish designs" />
+        <ToDoIncomplete taskValue="Make responsive on Figma" />
         <div className={styles.divider} />
         <input
           className={styles.addToDo}
