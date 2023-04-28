@@ -1,32 +1,19 @@
-.addToDo,
 .divider {
   align-self: stretch;
   position: relative;
-}
-.divider {
   background-color: #434343;
   height: 1px;
   flex-shrink: 0;
 }
-.addToDo {
-  border: 0;
-  font-weight: 500;
-  font-family: Inter;
-  font-size: 18px;
-  background-color: transparent;
-  line-height: 24px;
-  color: #7d7d94;
-  text-align: left;
-}
 .toDoListDesign,
 .todolistcontainer {
+  background-color: #1e1f25;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 .todolistcontainer {
   flex: 1;
-  background-color: #1e1f25;
   flex-direction: column;
   padding: 64px 57px;
   gap: 26px;
@@ -35,6 +22,7 @@
   position: relative;
   width: 100%;
   flex-direction: row;
+  min-height: 100%;
 }
 @media screen and (max-width: 420px) {
   .todolistcontainer {

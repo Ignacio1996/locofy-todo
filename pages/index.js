@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import ToDoComplete from "../components/to-do-complete";
 import ToDoIncomplete from "../components/to-do-incomplete";
+import AddToDo from "../components/add-to-do";
 import styles from "./index.module.css";
 const ToDoListDesign = () => {
   return (
@@ -11,11 +12,7 @@ const ToDoListDesign = () => {
         <ToDoComplete taskValue="Finish designs" />
         <ToDoIncomplete taskValue="Make responsive on Figma" />
         <div className={styles.divider} />
-        <input
-          className={styles.addToDo}
-          type="text"
-          placeholder="Add to do..."
-        />
+        <AddToDo />
       </div>
     </div>
   );
