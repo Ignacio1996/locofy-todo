@@ -1,9 +1,9 @@
 import styles from "./header.module.css";
-const Header = () => {
+const Header = ({ listTitle }) => {
   return (
     <div className={styles.header}>
       <div className={styles.titleNotes}>
-        <div className={styles.toDo}>To Do</div>
+        <div className={styles.toDo}>{listTitle}</div>
         <div className={styles.userFeedbackTomorrow}>
           User feedback tomorrow!
         </div>

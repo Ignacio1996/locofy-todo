@@ -7,7 +7,7 @@ const ToDoListDesign = () => {
   return (
     <div className={styles.toDoListDesign}>
       <div className={styles.todolistcontainer}>
-        <Header />
+        <Header listTitle="To Do" />
         <div className={styles.divider} />
         <ToDoComplete taskValue="Finish designs" />
         <ToDoIncomplete taskValue="Make responsive on Figma" />
